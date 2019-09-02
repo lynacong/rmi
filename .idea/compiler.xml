@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jms.test.self" />
         <module name="rmi.test.self" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common.mode.tests.elf" target="1.5" />
+      <module name="jms.test.self" target="1.5" />
       <module name="rmi.test.self" target="1.6" />
     </bytecodeTargetLevel>
   </component>

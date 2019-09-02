@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common.mode.tests.elf.iml" filepath="$PROJECT_DIR$/common.mode.tests.elf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jms.test.self/jms.test.self.iml" filepath="$PROJECT_DIR$/jms.test.self/jms.test.self.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmi.test.self/rmi.test.self.iml" filepath="$PROJECT_DIR$/rmi.test.self/rmi.test.self.iml" />
     </modules>
   </component>

@@ -13,7 +13,7 @@ import java.rmi.server.UnicastRemoteObject;
  * 该远程对象将会把自身的一个拷贝以Socket的形式传输给客户端，此时客户端所获得的这个拷贝称为“存根”，
  * 而服务器端本身已存在的远程对象则称之为“骨架”。其实此时的存根是客户端的一个代理，用于与服务器端的通信，
  * 而骨架也可认为是服务器端的一个代理，用于接收客户端的请求之后调用远程方法来响应客户端的请求。
- * @author  lyn
+ * @author  lyn实现
  * 这个是远程接口实现
  */
 public class RemoteInterImpl extends UnicastRemoteObject implements IremoteInter {
