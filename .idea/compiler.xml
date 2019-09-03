@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common.mode.tests.elf" target="1.5" />
-      <module name="jms.test.self" target="1.5" />
+      <module name="jms.test.self" target="1.6" />
       <module name="rmi.test.self" target="1.6" />
     </bytecodeTargetLevel>
   </component>
