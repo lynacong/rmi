@@ -11,7 +11,7 @@ public class QueueConsumer {
     public static void main(String[] args) {
         try {
             //1.创建连接工厂
-            ActiveMQConnectionFactory connectionFactory=new ActiveMQConnectionFactory("MQ地址");
+            ActiveMQConnectionFactory connectionFactory=new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
             //2.获取连接对象
             Connection  connection=connectionFactory.createConnection();
             //3.启动连接
@@ -19,7 +19,7 @@ public class QueueConsumer {
             //4.获取session
             Session session=connection.createSession(false,Session.AUTO_ACKNOWLEDGE);
                     //5.创建对列对象
-            Queue queue=session.createQueue("对列名称");
+            Queue queue=session.createQueue("test_queue");
             //6.创建消费者
             MessageConsumer consumer=session.createConsumer(queue);
             //7.监听消息
@@ -36,7 +36,7 @@ public class QueueConsumer {
                 }
             });
             //8.等待键盘输入
-            System.in.read();
+           // System.in.read();
             //9.关闭资源
             consumer.close();
             session.close();
